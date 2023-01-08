@@ -1,0 +1,19 @@
+.prompt-container {
+  background: $grey-100;
+  padding: 16px;
+  width: 400px;
+}
+
+.prompt-title {
+  font-size: $font-size-8;
+  display: inline;
+}
+
+.prompt-label {
+  background-color: $grey-200;
+  padding: 2px 8px;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: $font-size-4;
+  margin-left: 16px;
+}
