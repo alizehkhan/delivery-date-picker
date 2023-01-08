@@ -1,0 +1,54 @@
+.days {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(7, 40px);
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.week {
+  display: grid;
+  gap: 4px;
+  width: 100%;
+  grid-template-columns: repeat(7, 40px);
+  grid-template-rows: 40px;
+  font-family: $font-family-base-mono;
+
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.day {
+  border: solid 1px $brand-red-400;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: $brand-red-400;
+
+  &:hover {
+    background-color: $brand-red-100;
+  }
+
+  &:disabled {
+    background-color: $grey-200;
+    color: $grey-500;
+    border: none;
+    cursor: auto;
+  }
+}
+
+.month {
+  text-align: center;
+  font-size: $font-size-4;
+  margin-bottom: 16px;
+}
+
+#selected {
+  color: white;
+  background-color: $brand-red-400;
+}

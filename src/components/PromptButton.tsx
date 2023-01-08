@@ -4,6 +4,8 @@ import ReactModal from 'react-modal'
 
 import { ReactComponent as Van } from '../images/van.svg'
 
+import Modal from './Modal'
+
 const PromptButton = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [deliveryDate, setDeliveryDate] = useState(new Date())
@@ -31,7 +33,11 @@ const PromptButton = () => {
         className="modal"
         overlayClassName="overlay"
       >
-        hello
+        <Modal
+          setIsModalOpen={setIsModalOpen}
+          setDeliveryDate={setDeliveryDate}
+          deliveryDate={deliveryDate}
+        />
       </ReactModal>
     </>
   )
