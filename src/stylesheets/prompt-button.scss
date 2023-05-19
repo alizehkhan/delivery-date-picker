@@ -9,8 +9,8 @@
   overflow: hidden;
 
   &:hover {
-    box-shadow: $shadow-lg;
-    transform: scale(1.02);
+    box-shadow: $shadow-md;
+    transform: scale(1.01);
   }
 }
 
@@ -58,7 +58,7 @@
 }
 
 .prompt-calendar {
-  background: url('../images/calendar.svg');
+  background: url("../images/calendar.svg");
   display: flex;
   justify-content: center;
   background-repeat: no-repeat;

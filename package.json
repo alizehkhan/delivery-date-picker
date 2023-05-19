@@ -1,5 +1,6 @@
 {
-  "name": "calendar",
+  "name": "delivery-date-picker",
+  "author": "Alizeh Khan",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
