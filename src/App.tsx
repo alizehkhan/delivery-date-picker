@@ -1,14 +1,27 @@
-import PromptButton from './components/PromptButton'
-import './stylesheets/index.scss'
+import { useState } from "react";
 
-const App = () => (
-  <main>
-    <div className="prompt-container">
-      <h1 className="prompt-title">Choose your delivery day</h1>
-      <p className="prompt-label">Delivery is always free</p>
-      <PromptButton />
-    </div>
-  </main>
-)
+import PromptButton from "./components/PromptButton";
+import { SubscriptionContext } from "./context/SubscriptionContext";
+import { earliestDeliveryDate } from "./utils";
 
-export default App
+import "./stylesheets/index.scss";
+
+const App = () => {
+  const [deliveryDate, setDeliveryDate] = useState(
+    earliestDeliveryDate(new Date())
+  );
+
+  return (
+    <SubscriptionContext.Provider value={{ deliveryDate, setDeliveryDate }}>
+      <main>
+        <div className="prompt-container">
+          <h1 className="prompt-title">Choose your delivery day</h1>
+          <p className="prompt-label">Delivery is always free</p>
+          <PromptButton />
+        </div>
+      </main>
+    </SubscriptionContext.Provider>
+  );
+};
+
+export default App;
