@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d0a42651-00a9-467a-b1fa-edeb92cdc770/deploy-status)](https://app.netlify.com/sites/deliverydatepicker/deploys)
+
 # Delivery Date Picker
 
 This project implements a delivery date picker with the following constraints:
